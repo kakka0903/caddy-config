@@ -35,6 +35,10 @@ juleweb.kakk.dev {
 	reverse_proxy localhost:8012
 }
 
+zvanzflask.kakk.dev {
+	reverse_proxy localhost:8013
+}
+
 kakk.dev {
 	handle_path / {
 		redir https://kakka.dev
@@ -51,7 +55,7 @@ files.kakk.dev {
 #   reverse_proxy {
 #	to http://192.168.0.1
 #	header_up Host 192.168.0.1
-#	header_up User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" 
+#	header_up User-Agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 #	header_up -X-Forwarded-For
 #	header_up -X-Forwarded-Host
 #	header_up -X-Forwarded-Proto
